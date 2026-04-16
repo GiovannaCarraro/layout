@@ -1,0 +1,85 @@
+:root {
+  --primary-color-light: #f0f0f0;
+  --secondary-color-light: #ffffff;
+  --text-color-light: #333;
+  --hover-color-light: #ddd;
+  --button-bg-light: #e0e0e0;
+  --button-hover-light: #ccc;
+  --sidebar-bg-light: #ffffff;
+
+  --primary-color-dark: #1e1e1e;
+  --secondary-color-dark: #2e2e2e;
+  --text-color-dark: #f0f0f0;
+  --hover-color-dark: #555;
+  --button-bg-dark: #333;
+  --button-hover-dark: #444;
+  --sidebar-bg-dark: #2e2e2e;
+}
+
+.theme-container{
+   margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.theme-container.dark{
+ --bg: var(--primary-color-dark);
+  --text: var(--text-color-dark);
+  --sidebar: var(--sidebar-bg-dark);
+  --button: var(--button-bg-dark);
+  --button-hover: var(--button-hover-dark);
+}
+
+.theme-container.light{
+--bg: var(--primary-color-light);
+  --text: var(--text-color-light);
+  --sidebar: var(--sidebar-bg-light);
+  --button: var(--button-bg-light);
+  --button-hover: var(--button-hover-light);
+}
+
+
+.menu{
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+  background-color: var(--sidebar-bg-light);
+  transition: backgroud-color 0.3s;
+  padding: 20px;
+}
+
+.theme-container.dark .menu{
+    background-color: var(--sidebar-bg-dark);
+}
+
+.menu ul{
+list-style: none;
+  padding: 0;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: var(--text);
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+
+.container1{
+ 
+}
+
+.button{
+padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--button);
+  color: var(--text);
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: var(--button-hover);
+}
