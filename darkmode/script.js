@@ -1,5 +1,5 @@
 // Evento que é disparado quando o conteúdo do DOM (estrutura HTML) é totalmente carregado
-
+document.addEventListener
 
 // Verifica no localStorage se existe um tema salvo. Se não houver, define o tema padrão como 'light'
  
